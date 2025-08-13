@@ -1,7 +1,7 @@
 // Part 1 ----------------------------------------------------------------
 // Select and cache the <main> element in a variable named mainEl.
-const mainEl = document.querySelector('main');
-// console.log(mainEl);
+const mainEl = document.querySelector('main');  //<main></main>
+console.log(mainEl);
 
 // Set the background color of mainEl to the value stored in the --main-bg CSS custom property.
 // Hint: Assign a string that uses the CSS var() function like this: 'var(--main-bg)'.
@@ -48,16 +48,17 @@ for (let link of menuLinks){
     console.log(menuButton);
     // On the new element, add an href attribute with its value set to the href property of the "link" object.
     menuButton.setAttribute("href", link.href);
-    console.log(menuButton);
+    // console.log(menuButton);
     // Set the new element's content to the value of the text property of the "link" object.
     menuButton.textContent = link.text;
-    console.log(menuButton)
+
+    // console.log(menuButton)
     // Append the new element to the topMenuEl element.
+  
+    topMenuEl.appendChild(menuButton);
 
 }
 
-
-// Append the new element to the topMenuEl element.
 
 
 
